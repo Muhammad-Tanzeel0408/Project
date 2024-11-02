@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+ 
+}
+body{
+    background-color:rgb(229, 238, 241);
+    margin: 0;
+}
+.logo{
+    border-radius: 50%;
+   /* display: inline-block; */
+}
+.navbar{
+    background-color:purple;
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    
+}
+.navitem { 
+    display: inline-block;
+    /* padding: 1.5em 1.5em 1.8em 1.5em; */
+    border-radius: 5px;
+    padding:1rem;
+    transition: background-color 0.6s; 
+}
+.navitem:hover{
+    background-color:orange;
+}
+.navul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.navanchor{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dropdownli{
+    position: absolute;
+    background-color:rgb(84, 2, 85) ;
+    margin-top: 15px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0  20px rgb(0, 0, 0);
+    visibility: hidden;
+}
+.navitem:hover ul{
+    visibility: visible;
+}
+.dropdownli li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 19px;
+    border-radius: 10px;
+}
+.dropdownli li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dropdownli li:hover{
+    background-color: orange;
+}
+.navbardiv{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.anime{
+    display: flex;
+    width: 750px;
+    height: 50px;
+    background-color: rgb(213, 75, 183);
+    position: relative;  
+    justify-self: center;
+    top: 6px;
+    z-index: 3; 
+    border-radius: 15px;
+}
+.imagebig{
+    position: relative;
+    /*top: 80px;*/
+    background-color: rgb(246, 251, 252);
+    border: solid black 0.2em;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 220px;
+}
+
+.intro{
+    position: relative;
+    top:40px;
+    margin-left: 50px;
+    width: 600px;
+    height: 330px;
+   /* border: solid black 0.1em; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-shadow: gray;
+    font-size: 48px;
+    font-style:italic;
+}
+
+.mission{
+    position: relative;
+    top:40px;
+    margin-left: 360px;
+    width: 800px;
+    height: 250px;
+    /*border: solid black 0.1em; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-shadow: gray;
+   /* font-size: 48px;*/
+    font-style:italic;
+    border-radius: 25px;
+    background-color: rgb(197, 241, 86);
+}
+
+.courses{
+    /*border: solid black 0.2em;*/
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin-left: 160px;
+    display: flex;
+}
+
+.mainstart{
+    display: flex;
+}
+
+.faq{
+   border: solid black 0.1em;
+    width: 40%;
+    height: 540px;
+    margin-left: 230px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    padding: 1em 1em 1em 1em;
+    border: 0;
+    margin-top: 40px;
+    margin-left: 280px;
+    
+}
+button:hover{
+   /* transform: scale(1.2);*/
+    box-shadow: 0 0 6px black;
+    
+}
+
+@keyframes KFticker { 0%{transform: translate3d(230% ,0 ,0); }100%{transform: translate3d(0%,0,0);}} 
+
+.ticker{ color:black; font-size: 30px;padding-top: 0.3em; animation-name: KFticker;animation-duration: 10s;animation-delay: 0;animation-iteration-count: infinite;animation-timing-function: linear;animation-direction:alternate-reverse;}
+
+
+
+
